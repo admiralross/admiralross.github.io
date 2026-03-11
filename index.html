@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemis workspace </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap">
+
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="nav-item active" data-page="home">
+                <div class="nav-icon">⌂</div>
+                <div class="nav-label">Home</div>
+            </div>
+            <div class="nav-item" data-page="projects">
+                <div class="nav-icon">◯</div>
+                <div class="nav-label">Projects</div>
+            </div>
+            <div class="nav-item" data-page="about">
+                <div class="nav-icon">ⓘ</div>
+                <div class="nav-label">About</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Home Page -->
+            <div class="page active" id="home">
+                <div class="home-page">
+                    <div class="logo">
+                        <div class="logo-inner">AE</div>
+                    </div>
+                    <h1 class="home-title">ADMIRAL WORKSPACE</h1>
+                    <p class="home-subtitle">one tech for all ideas</p>
+                    
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <div class="dot dot-red"></div>
+                                <div class="dot dot-yellow"></div>
+                                <div class="dot dot-green"></div>
+                            </div>
+                            <div class="terminal-title">bash — 80×24</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p>
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">sudo ./init_system.sh</span>
+                            </p>
+                            <p>Initializing workshop workspace...</p>
+                            <p>Loading   v4.20</p>
+                            <p>Verifying  protocols<span class="blink">_</span></p>
+                            <br>
+                            <p>
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">status --system</span>
+                            </p>
+                            <p>Core Temperature: 27°C <span style="color: var(--primary)">[NOMINAL]</span></p>
+                            <p>Qubit Coherence: 12.7ms</p>
+                            <p>Processor: Intel Core i9-13900K @ 5.8GHz</p>
+                            <p>Memory: 128GB DDR5 @ 5200MHz</p>
+                            <br>
+                            <p>
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command"><span class="cursor"></span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Page -->
+            <div class="page" id="projects">
+                <div class="projects-page">
+                    <h1 class="section-title"> Projects</h1>
+                    
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="res/minimalist.PNG" alt="Quantum computing laboratory with superconducting qubits in a cryogenic chamber" />
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Minimalist Web Design</h3>
+                                <p class="project-desc">
+                                    Developing next-generation sleek website with basic website technologies.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-pill">HTML</span>
+                                    <span class="tech-pill">TYPESCRIPT</span>
+                                    <span class="tech-pill">CSS</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">View
+                                        <a href="#" class="project-link">View Project</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Project 2 -->
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="res/Clone.PNG" alt="Quantum algorithm optimization" />
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">CLONING WEBSITE DESIGN</h3>
+                                    <p class="project-desc">
+                                        cloning a finantial website webpage for research, alteration and security studies
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-pill">SQL</span>
+                                        <span class="tech-pill">HTML/CSS</span>
+                                        <span class="tech-pill">JavaScript</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">View Project</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Project 3 -->
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="res/Circuit.png" alt="Quantum communication systems" />
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Circuitry Design</h3>
+                                    <p class="project-desc">
+                                        Developing and construction of emergency strobing lightening systems using electrical and electronics simulation and CAD.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-pill">Proteus</span>
+                                        <span class="tech-pill">EasyEDA</span>
+                                        <span class="tech-pill">Blender</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">View Project</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- About Page -->
+                <div class="page" id="about">
+                    <div class="about-page">
+                        <h1 class="section-title">About Me</h1>
+                        <div class="about-content">
+                            <p class="about-text">
+                                I am a computer engineer specializing in PC building, Website designing and circuit designing. 
+                                My passion lies in exploring the intersection of technology and innovation, particularly in the realm of creativity
+                                 and its freedom in computing.
+                            </p>
+                            <p class="about-text">
+                                With a background in electronics engineering, Circuitry, information and communication technology and
+                                 computer science, I have worked on various projects that involve designing and building circuits, optimizing algorithms, 
+                                 and developing secure communication systems. I am always eager to learn and collaborate on exciting projects that push 
+                                 the boundaries of technology.
+                            </p>
+                            <h2 class="skill-title">Skills</h2>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h3 class="skill-title">Programming Languages</h3>
+                                    <ul class="skill-list">
+                                        <li class="skill-item">Python</li>
+                                        <li class="skill-item">C++</li>
+                                        <li class="skill-item">Java</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h3 class="skill-title">Engineering Technologies</h3>
+                                    <ul class="skill-list">
+                                        <li class="skill-item">Circuit Design </li>
+                                        <li class="skill-item">Assemble & Re-Mod </li>
+                                        <li class="skill-item">Server Management</li>
+                                        <li class="skill-item">Networking</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h3 class="skill-title">Web Technologies</h3>
+                                    <ul class="skill-list">
+                                        <li class="skill-item">HTML/CSS</li>
+                                        <li class="skill-item">JavaScript</li>
+                                        <li class="skill-item">React</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <h1 class="section-title">contact me</h1>
+                            <div class="skill-category">
+                                    <h3 class="skill-title">Contact Info</h3>
+                                    <ul class="skill-list">
+                                        <li class="skill-item">artemis @ tiktok</li>
+                                        <li class="skill-item">artemisstudios on youtube</li>
+                                        <li class="skill-item">artemis on github</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            const navItems = document.querySelectorAll('.nav-item');
+            const pages = document.querySelectorAll('.page');
+    
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const targetPage = item.getAttribute('data-page');
+    
+                    // Remove active class from all nav items
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    // Add active class to the clicked nav item
+                    item.classList.add('active');
+    
+                    // Hide all pages
+                    pages.forEach(page => page.classList.remove('active'));
+                    // Show the target page
+                    document.getElementById(targetPage).classList.add('active');
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
